@@ -72,8 +72,7 @@ mth308lib/
 │
 ├── mth308/
 │   ├── __init__.py
-│   ├── bisection.py
-│   ├── cli.py             
+│   ├── bisection.py     
 │   ├── ctr_num_int.py
 │   ├── divided_diff.py
 │   ├── euler.py
@@ -92,7 +91,8 @@ mth308lib/
 │
 ├── tests/
 │   └── test_all.py
-│
+├── cli.py             
+├── setup.py
 ├── setup.py
 └── README.md
 ```
