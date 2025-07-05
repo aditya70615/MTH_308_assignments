@@ -1,23 +1,26 @@
+from setuptools import setup, find_packages
+
 setup(
-    name="mth308lib",
-    version="1.0.0",
-    description="A Python library implementing core numerical methods for MTH308: root-finding, linear systems, interpolation, and ODE solvers.",
-    author="Aditya Anand",
-    author_email="adityaa23@iitk.ac.in",
+    name='mth308lib',                    
+    version='0.1.0',
+    description='Numerical methods library for MTH308 with CLI support',
+    long_description=open('README.md').read(),
+    long_description_content_type='text/markdown',
+    author='Your Name',
+    author_email='your.email@example.com',
+    url='https://github.com/aditya70615/MTH_308_assignments',
     packages=find_packages(),
-    install_requires=[
-        "numpy",
-        "matplotlib"
-    ],
-    python_requires=">=3.7",
-    classifiers=[
-        "Programming Language :: Python :: 3",
-        "License :: OSI Approved :: MIT License",
-        "Operating System :: OS Independent",
-    ],
+    py_modules=['cli'],                  
+    install_requires=[],                
     entry_points={
-        "console_scripts": [
-            "mth308 = mth308.cli:main"
-        ]
-    }
+        'console_scripts': [
+            'mth308=cli:main',
+        ],
+    },
+    classifiers=[
+        'Programming Language :: Python :: 3',
+        'License :: OSI Approved :: MIT License',  # Change if needed
+        'Operating System :: OS Independent',
+    ],
+    python_requires='>=3.7',
 )
