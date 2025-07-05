@@ -1,11 +1,9 @@
-from setuptools import setup, find_packages
-
 setup(
     name="mth308lib",
     version="1.0.0",
     description="A Python library implementing core numerical methods for MTH308: root-finding, linear systems, interpolation, and ODE solvers.",
-    author="Tanish Bansal, Shobhit Goel",
-    author_email="btanish23@iitk.ac.in, shobhitg23@iitk.ac.in",
+    author="Aditya Anand",
+    author_email="adityaa23@iitk.ac.in",
     packages=find_packages(),
     install_requires=[
         "numpy",
@@ -17,4 +15,9 @@ setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
+    entry_points={
+        "console_scripts": [
+            "mth308 = mth308.cli:main"
+        ]
+    }
 )
