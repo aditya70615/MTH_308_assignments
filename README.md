@@ -73,6 +73,7 @@ mth308lib/
 ├── mth308/
 │   ├── __init__.py
 │   ├── bisection.py
+│   ├── cli.py             
 │   ├── ctr_num_int.py
 │   ├── divided_diff.py
 │   ├── euler.py
